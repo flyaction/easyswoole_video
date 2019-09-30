@@ -1,0 +1,11 @@
+19-09-30 23:14:23:Error at file[/data/www/easyswoole2/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php] line[115] message:[Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:8000], Error: Address already in use[98] in /data/www/easyswoole2/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php:115
+Stack trace:
+#0 /data/www/easyswoole2/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(115): Swoole\Server->__construct('0.0.0.0', 8000, 2, 1)
+#1 /data/www/easyswoole2/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(61): EasySwoole\Core\Swoole\ServerManager->createMainServer()
+#2 /data/www/easyswoole2/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#3 /data/www/easyswoole2/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
+#4 /data/www/easyswoole2/vendor/easyswoole/easyswoole/bin/easyswoole(25): serverStart(Array)
+#5 /data/www/easyswoole2/vendor/easyswoole/easyswoole/bin/easyswoole(462): commandHandler()
+#6 /data/www/easyswoole2/easyswoole(2): require('/data/www/easys...')
+#7 {main}
+  thrown]
